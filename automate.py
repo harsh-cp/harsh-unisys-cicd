@@ -55,7 +55,7 @@ assert "Success" in message
 #     print("Success message not found")
 
 
-time.sleep(5)
+time.sleep(6)
 
 
 print("page title :",chrome_driver.title)
