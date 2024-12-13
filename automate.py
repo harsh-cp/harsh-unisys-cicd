@@ -1,14 +1,10 @@
-### Functional Testing
-# This script is showing 1 Problem bcuz I have not install the selenium in local instead
-# we have install this in virtual machine 
-# import selenium
-# print(selenium.__version__)
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
 import time
+
 # Setting up headless mode
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Enable headless mode
@@ -19,9 +15,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resou
 # Initializing the web driver with options
 service = Service("/usr/bin/chromedriver")  # Update the path to chromedriver
 chrome_driver = webdriver.Chrome(service=service, options=chrome_options)
-# loading particular driver of browser
-# initializing web driver
-chrome_driver = webdriver.Chrome()
+
 # opening a web URL
 chrome_driver.get("https://rahulshettyacademy.com/angularpractice/")
 #chrome_driver.get("https://portal.adhocnet.org/")
